@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:zhy="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_base_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="4.0">
+        <TextView android:text="基础号码" style="@style/tv_title_twostart" />
+        <View android:background="@color/black" android:layout_width="80.0dip" android:layout_height="2.0px" />
+        <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+            <com.shishicai.app.ui.CheckBoxTagViewGroup android:id="@id/checkbox_tags_view_group" style="@style/vg_twostart" />
+        </RelativeLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="2.0px" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="30.0dip" android:weightSum="6.0">
+            <TextView android:id="@id/tv_base_big" android:text="大" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_base_small" android:text="小" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_base_odd" android:text="奇" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_base_even" android:text="偶" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_base_all" android:text="全" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:id="@id/tv_base_no" android:text="清" style="@style/tv_twostart" />
+            <TextView android:background="@color/line" android:layout_width="2.0px" android:layout_height="fill_parent" />
+            <TextView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</LinearLayout>

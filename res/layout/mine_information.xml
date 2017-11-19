@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_mine_infor" />
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mine_relative_nickname" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="昵称：" />
+        <ImageView android:id="@id/address_img" android:background="@drawable/g_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/mine_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入" android:layout_toLeftOf="@id/address_img" />
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mine_relative_birthday" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="出生日期：" />
+        <ImageView android:id="@id/address_img1" android:background="@drawable/g_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/mine_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:layout_toLeftOf="@id/address_img1" />
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mine_relative_gender" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="性别：" />
+        <ImageView android:id="@id/address_img2" android:background="@drawable/g_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:id="@id/mine_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请选择" android:layout_toLeftOf="@id/address_img2" />
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/mine_relative_email" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <TextView android:textSize="16.0sp" android:id="@id/address_tv_you" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="邮箱：" />
+        <ImageView android:id="@id/address_img3" android:background="@drawable/g_pay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:gravity="right" android:id="@id/mine_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请输入" android:singleLine="true" android:layout_toLeftOf="@id/address_img3" android:layout_toRightOf="@id/address_tv_you" />
+    </RelativeLayout>
+    <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

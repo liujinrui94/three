@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_top" />
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/longhu_tv" android:background="@drawable/select_btn_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="龙虎路珠" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/daxiao_tv" android:background="@drawable/select_btn_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="大小路珠" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/danshuang_tv" android:background="@drawable/select_btn_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="单双路珠" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/guanyehe_tv" android:background="@drawable/select_btn_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="总和路珠" android:layout_weight="1.0" />
+        </LinearLayout>
+        <View android:background="@color/white" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginRight="20.0dip">
+            <TextView android:textSize="20.0sp" android:gravity="center" android:id="@id/qianhou_tv" android:background="@drawable/select_btn_style" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:text="号码路珠" android:layout_weight="1.0" />
+            <TextView android:textSize="20.0sp" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.baidu.sscssc704.no30" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-permission android:name="com.baidu.sscssc704.no30.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <permission android:name="com.baidu.sscssc704.no30.permission.JPUSH_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="cn.bmob.permission.push" android:protectionLevel="normal"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <application android:allowBackup="true" android:hardwareAccelerated="true" android:icon="@drawable/sscssc" android:label="彩民之家" android:name="com.shishicai.app.MyApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:label="彩民之家" android:name="com.shishicai.app.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+           <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="UMENG_APPKEY" android:value="590889b96e27a40daf001d1e"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="guanwang"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="cn.jpush.android.ui.PushActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="com.baidu.sscssc704.no30"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="cn.jpush.android.ui.PopWinActivity" android:theme="@style/MyDialogStyle"/>
+        <service android:enabled="true" android:exported="false" android:name="cn.jpush.android.service.DownloadService"/>
+        <service android:name="cn.jpush.android.service.PushService" android:process=":mult">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="cn.jpush.android.service.DaemonService">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+                <category android:name="com.baidu.sscssc704.no30"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:name="cn.jpush.android.service.PushReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <category android:name="com.baidu.sscssc704.no30"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="cn.jpush.android.service.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.shishicai.app.service.JPushReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <category android:name="com.baidu.sscssc704.no30"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="f42a57dc5e1948589e2cd393"/>
+        <receiver android:name="com.shishicai.app.service.DownLoadBroadcastReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:label="PushService" android:name="cn.bmob.push.lib.service.PushService" android:permission="cn.bmob.permission.push" android:process="cn.bmob.push">
+            <intent-filter>
+                <action android:name="cn.bmob.push.lib.service.PushService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="cn.bmob.push.PushReceiver" android:process="cn.bmob.push">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.shishicai.app.service.MyPushMessageReceiver" android:process=":push">
+            <intent-filter>
+                <action android:name="cn.bmob.push.action.MESSAGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleTask" android:name="com.shishicai.app.activity.MainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+		 
+		</activity>
+		<activity android:name="com.shishicai.app.activity.OfficalNetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineSetting" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.ShowImgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.ToolActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.SettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.MsgActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.AwardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.DayNewsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shishicai.app.activity.ChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.shishicai.app.activity.ColdHotActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.AboutAsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.LuzhuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.LuzhuDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.PredictActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.ChartActivity" android:screenOrientation="landscape"/>
+        <activity android:launchMode="singleTask" android:name="com.shishicai.app.activity.WebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.shishicai.app.activity.WebActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.shishicai.app.activity.PlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.shishicai.app.activity.TwoStartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.SuoShuiListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.TwoSideLongActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineRegister" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineFindPassword" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MinePasswod" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineInformation" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineNickName" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineEmail" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineCollection" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineOrder" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineOrderDetail" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.mine.MineBonus" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.ScanResultShow" android:screenOrientation="portrait"/>
+        <activity android:name="com.shishicai.app.activity.GenerateNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.uuzuche.lib_zxing.activity.CaptureActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_time" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="日期" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_one" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="1" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_two" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="2" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_three" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="3" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_four" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="4" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_five" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="5" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_six" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="6" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_seven" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="7" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_eight" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="8" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_nine" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="9" android:layout_weight="1.0" />
+    <TextView android:textSize="18.0sp" android:textColor="@color/black_cart" android:gravity="center" android:id="@id/msg_ten" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="10" android:layout_weight="1.0" />
+</LinearLayout>

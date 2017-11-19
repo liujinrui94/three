@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_top" />
+    <LinearLayout android:orientation="vertical" android:id="@id/login" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="我已注册" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <EditText android:textSize="18.0sp" android:id="@id/login_username" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="请输入用户名" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <EditText android:textSize="18.0sp" android:id="@id/login_password" android:background="@null" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:hint="请输入密码" android:singleLine="true" android:inputType="textPassword" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/mine_btn_login" android:background="@drawable/loginbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:textSize="14.0sp" android:id="@id/login_ckb_remember" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="记住密码 " style="@style/LoginCheckboxTheme" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/login_forget" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="| 忘记密码" />
+        </LinearLayout>
+        <TextView android:textSize="20.0sp" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:text="我要注册" />
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/mine_btn_register" android:background="@drawable/zhuce" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

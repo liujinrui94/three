@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_top" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="省   份： " />
+                    <Spinner android:enabled="false" android:id="@id/address_province" android:focusable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="城   市： " />
+                    <Spinner android:enabled="false" android:id="@id/address_city" android:focusable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地  区： " />
+                    <Spinner android:enabled="false" android:id="@id/address_district" android:focusable="false" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="地   址： " />
+                    <EditText android:id="@id/address_address" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="联系人：" />
+                    <EditText android:id="@id/address_name" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="5.0dip">
+                    <TextView android:textSize="16.0sp" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="电   话： " />
+                    <EditText android:id="@id/address_phone" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" android:inputType="phone" />
+                </LinearLayout>
+            </LinearLayout>
+            <Button android:textSize="18.0sp" android:id="@id/address_submit" android:background="@color/login_text" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="10.0dip" android:text="确认" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/address_add_load" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="60.0dip" android:layout_height="60.0dip" />
+            <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载中..." />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/articleview" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/title_top" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_1" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第一球" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_2" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第二球" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_3" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第三球" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_4" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第四球" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_5" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="第五球" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_6" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="六" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_7" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="七" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_8" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="八" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_9" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="九" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/tab_10" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="18.0sp" android:textColor="@color/color_tab" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="十" />
+            <ImageView android:background="@drawable/tab_selector" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/msg_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0sp" android:textColor="@color/red" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="10.0dip" android:text="热" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_bg" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="（频繁出现的\n号码为热码）" />
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <GridView android:id="@id/hot_gv" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_bg" android:cacheColorHint="#00000000" android:numColumns="5" android:divider="#ffcacbd1" android:dividerHeight="0.5px" android:footerDividersEnabled="true" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0sp" android:textColor="@color/chima" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="10.0dip" android:text="温" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_bg" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="（出现频率适\n中的号码为\n温码）" />
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <GridView android:id="@id/warm_gv" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_bg" android:cacheColorHint="#00000000" android:numColumns="5" android:divider="#ffcacbd1" android:dividerHeight="0.5px" android:footerDividersEnabled="true" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="100.0dip">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <TextView android:textSize="20.0sp" android:textColor="@color/login_text" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="10.0dip" android:text="冷" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/gray_bg" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="（没有出现的\n号码为冷码）" />
+            </LinearLayout>
+            <View android:background="@color/line" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <GridView android:id="@id/cold_gv" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/list_selector_bg" android:cacheColorHint="#00000000" android:numColumns="5" android:divider="#ffcacbd1" android:dividerHeight="0.5px" android:footerDividersEnabled="true" />
+        </LinearLayout>
+        <View android:background="@color/line" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/msg_load" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="false" android:indeterminateDrawable="@drawable/progress_small" style="?android:attr/progressBarStyle" />
+        <TextView android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在加载中..." />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="welcome_tips">
+        <item>主人，小彩机器人在此等候多时了</item>
+        <item>主人，近来一切可好</item>
+        <item>亲爱的，我想死你了</item>
+        <item>欢迎回来，我是小彩机器人。</item>
+        <item>我是小彩机器人，很高兴为您服务。</item>
+    </string-array>
+</resources>
